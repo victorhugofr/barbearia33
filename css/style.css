@@ -1,0 +1,145 @@
+.nav-link{
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
+    font-size: 1.0em;
+    margin-left: 25px;
+}
+h1{
+  font-family: 'Aladin', cursive;
+  opacity: 0.8;
+  color: #020303;
+font-size: 60px;
+line-height: 60px;
+}
+
+h1::before {
+    display: block;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    content: ' ';
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Decorative_text_divider_3.svg");
+    background-size: 129px 13px;
+    height: 13px;
+    width: 129px;
+    transform: rotate(180deg);
+    margin-bottom: 16px;
+}
+
+h1::after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    content: ' ';
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Decorative_text_divider_3.svg");
+    background-size: 129px 13px;
+    height: 13px;
+    width: 129px;
+    transform: rotate(180deg);
+    margin-bottom: 16px;
+}
+
+a#whats:link,a#whats:visited{
+  text-decoration: none;
+  color: white;
+}
+
+a#socialnet:link,a#socialnet:visited{
+  text-decoration: none;
+  color: white;
+}
+body {
+  font-family: 'FuturaPT', serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.01em;
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+.media-body .caption .container{
+    width: 100vh;
+    left: 0;
+}
+
+#home-slidder{
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+
+    min-height: 750px;
+	height: 100vh;
+	overflow: hidden;
+    position: relative;
+}
+.btn{
+  display: block;
+  margin-top: 10vh;
+  font-family: Dancing Script;
+ /* margin-left: 53vh;
+  margin-top: 10vh;
+  position: absolute;*/
+}
+.btn:hover{
+  color:  #809fff;
+}
+#sobre{
+    background-image: url(../img/aboutme.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    
+    min-height: 750px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.bordertop{
+  background-image: url(../img/bordertop.png);
+  background-size: cover;
+  background-position: center;
+  clear: both;
+  
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 142px;
+  z-index: 99998;
+}
+
+.caption .btn-start {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 40px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+.dev{
+    font-size: 6rem;
+}
+/*Presets*/
+@media (min-width:460px) and (max-width:768px) {
+  #home-slidder .caption h1 {
+    font-size: 20px !important;
+  }
+}
+@media (min-width:367px) and (max-width:459px) {
+  #home-slidder .caption h1 {
+    font-size: 20px !important;
+  }
+}
+@media (max-width:366px) {
+  #home-slidder .caption h1 {
+    font-size: 32px !important;
+  }
+}
