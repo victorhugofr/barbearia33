@@ -36,9 +36,11 @@ h1::after {
     background-size: 129px 13px;
     height: 13px;
     width: 129px;
-    transform: rotate(180deg);
+   
     margin-bottom: 16px;
 }
+
+
 
 a#whats:link,a#whats:visited{
   text-decoration: none;
@@ -59,7 +61,7 @@ body {
 }
 
 .media-body .caption .container{
-    
+    width: 100vh;
     left: 0;
 }
 
@@ -68,24 +70,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-blend-mode: multiply;
 
     min-height: 750px;
 	height: 100vh;
-
+	overflow: hidden;
     position: relative;
 }
-
-#about{
-  top: 0;
-}
-
 .btn{
   display: block;
-  margin-top: 3vh;
+  margin-top: 10vh;
   font-family: Dancing Script;
-  z-index: 99999999999;
-  position: relative;
  /* margin-left: 53vh;
   margin-top: 10vh;
   position: absolute;*/
@@ -93,16 +89,55 @@ body {
 .btn:hover{
   color:  #809fff;
 }
+#sobre{
+    background-image: url(../img/MJ.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+  
+    min-height: 750px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
 
 .bordertop{
   background-image: url(../img/bordertop.png);
   background-size: cover;
   background-position: center;
-
+  clear: both;
+  
   position: absolute;
   width: 100%;
   bottom: 0;
-  height: 142px; 
+  height: 142px;
+  z-index: 99998;
+}
+
+.barbers h2{
+ font-family: 'Permanent Marker', cursive;
+ color: #dc3545;
+ margin-top: 150px;
+  font-size: 107px;
+  text-align: center;
+  display: block;
+}
+
+.borderbot{
+  transform: rotate(180deg);
+  background-image: url(../img/b2.png);
+  background-size: cover;
+  background-position: center;
+  clear: both;
+  
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 142px;
+  z-index: 99998;
 }
 
 .caption .btn-start {
@@ -115,18 +150,29 @@ body {
   margin-top: 40px;
 }
 
-.titulo-depoimentos {
-  background-color: #0275D8;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  color: #FFF;
-  margin-bottom: 0;
-  font-size: 24px;
+.team{
+  margin: 0 auto;
+width: 96%;
+position: relative;
 }
 
-.element-animate{
-  opacity: 0;
-  visibility: hidden;
+.MJ{
+  background-image: url(../img/MJ.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  padding-bottom: 38%;
+min-height: 650px;
+padding-left: 1%;
+padding-right: 1%;
+width: 31%;
+background-size: contain;
+text-align: center;
+position: relative;
+}
+
+.dev{
+    font-size: 6rem;
 }
 /*Presets*/
 @media (min-width:460px) and (max-width:768px) {

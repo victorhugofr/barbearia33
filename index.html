@@ -10,12 +10,15 @@
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<!-- Add Bootstrap library -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- Local library -->
 	<link href="css/style.css" rel="stylesheet" >
+	<link href="css/animate.css" rel="stylesheet" >
 	<link href="css/icons.css" rel="stylesheet" >
-	<script src="jquery-3.1.1.min.js"></script>
-	<script src="jquery.paroller.min.js"></script>
-	<script src="js/main.js"></script>
+	
 </head>
 <body>
 	<header> 
@@ -47,10 +50,10 @@
             </div>
         </nav>-->
 
-        <div class=" bg-dark d-flex align-items-center paroller" id="home-slidder">
+        <div class=" jumbotron jumbotron-fluid bg-dark site-hero d-flex align-items-center paroller" data-paroller-factor="0.4" data-paroller-type="background" data-paroller-direction="vertical" id="home-slidder">
         	<div class="container">
         		<div class="row">
-        			<div class="caption col-md-8 offset-md-2 text-center ">
+        			<div class="caption element-animate col-md-8 offset-md-2 text-center ">
         				<img src="img/bg3sf.png" width="500" height="500">
         			</div>
         		</div>
@@ -58,15 +61,16 @@
         	</div>
         	
         </div>
-<div class="bordertop">
-        	</div>
+		<div class="bordertop">
+        </div>
     </header>
+
     <section class="page-section" id="about">
     	<div class="media">
     		<img src="img/brush.jpg" class="align-self-center ml-5" alt="brush">
     		<div class="media-body ">
     			<div class="caption  offset-md-0 text-center ">
-    				<div class="container">
+    				<div class="container element-animate" >
     					<img src="img/logo.png" height=" 200" width="250" id="img-logo" alt="logo" >
     					<h1 style="margin-top: 5%;"> BARBEARIA 33</h1>
     					<p style="margin-top: 30px;">Apesar da barbearia ter sido inaugurada apenas em 2015, a ideia aconteceu pelo menos um ano antes, previamente ao boom das barbearias no mercado.<br>Márcio "MJ" Rodrigues teve destaque com seu trabalho especializado nos cortes clássicos e no barbear com toalha quente, e também por seu ideal de barbearia. Apenas dois serviços: cortes clássicos e barbear com toalha quente.<br>Com o incentivo de clientes e amigos, resolveu sair da barbearia que trabalhava para abrir uma com sua cara e ouvidos. A música para nós é algo essencial. Rock and Roll alto, cerveja, cabelo e barba.<br>Poucas barbearias hoje entendem o ofício do barbeiro como ele costuma ser décadas atrás. Aqui na 33 nós resgatamos o espírito da barbearia tradicional, tratando cada cliente como se estivéssemos atendendo a nós mesmos.<br>Somos a Barbearia Número 33.</p>
@@ -75,5 +79,59 @@
     		</div>
     	</div>
     </section>
+
+    <section class="page-section" id="barbers">
+    	 <div class=" bg-dark d-flex align-items-center paroller" id="home-slidder">
+        	<div class="container">
+        		<div class="row">
+        			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        				<div class="carousel-inner">
+        					<div class="carousel-item active">
+        						<img src="img/joao.jpg" class="d-block w-100" alt="...">
+        					</div>
+        					<div class="carousel-item">
+        						<img src="img/MJ.jpg" class="d-block w-100" alt="...">
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+		
+    </section>
+
+    <section id="depoimentos">
+
+		<section class="depoimentos" name="depoimentos">
+  <h2>Depoimentos</h2>
+  <div class="container">
+     <div class="tcb-simple-carousel">
+       <div id="myCarousel" class="carousel slide">
+         <div class="carousel-inner" role="listbox">
+           <?php if(have_posts()) : while(have_posts()) : the_post(); ?> 
+              <div class="item trs">
+                <div class="content">
+                  <div class="imagem"><?php the_post_thumbnail(); ?></div>
+                  <div class="conteudo"><?php the_content() ?> <strong><?php the_title() ?></strong> </div>
+                 </div> <!-- acaba content --> 
+              </div> <!-- acaba item --> 
+           <?php endwhile; endif;?>
+         </div> <!-- acaba inner --> 
+         <div class="carousel-controls">        
+           <a href="#myCarousel" data-slide="prev"><span class="trs prev"></span></a>
+           <a href="#myCarousel" data-slide="next"><span class="trs next"></span></a>   
+         </div> <!-- acaba controls -->                
+       </div> <!-- acaba myCarousel -->  
+    </div> <!-- acaba tcb -->                
+  </div> <!-- acaba container -->    
+</section>
+		</div>
+	</section>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
