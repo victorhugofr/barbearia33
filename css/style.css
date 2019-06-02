@@ -17,9 +17,10 @@ line-height: 60px;
 h1::before {
     display: block;
     margin: 0 auto;
-        margin-bottom: 0px;
+    margin-top: 10px;
     content: ' ';
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Decorative_text_divider_3.svg");
+   /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Decorative_text_divider_3.svg");*/
+    background-image: url(../img/tesoura.png);
     background-size: 129px 13px;
     height: 13px;
     width: 129px;
@@ -32,12 +33,13 @@ h1::after {
     margin: 0 auto;
     margin-top: 10px;
     content: ' ';
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Decorative_text_divider_3.svg");
+   /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Decorative_text_divider_3.svg");*/
+    background-image: url(../img/tesoura.png);
     background-size: 129px 13px;
     height: 13px;
     width: 129px;
     transform: rotate(180deg);
-    margin-bottom: 16px;
+    margin-bottom: 30px;
 }
 
 a#whats:link,a#whats:visited{
@@ -98,12 +100,25 @@ body {
   background-image: url(../img/bordertop.png);
   background-size: cover;
   background-position: center;
-
+  display: block;
   position: absolute;
   width: 100%;
   bottom: 0;
   height: 142px; 
 }
+
+.bordertop2{
+   background-image: url(../img/bordertop.png);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 142px; 
+  transform: rotate(180deg);
+}
+
 
 .caption .btn-start {
   color: #fff;
@@ -128,19 +143,94 @@ body {
   opacity: 0;
   visibility: hidden;
 }
-/*Presets*/
-@media (min-width:460px) and (max-width:768px) {
-  #home-slidder .caption h1 {
-    font-size: 20px !important;
-  }
+
+.last-articles__title{
+  background-color: black;
+  padding: 3px;
 }
-@media (min-width:367px) and (max-width:459px) {
-  #home-slidder .caption h1 {
-    font-size: 20px !important;
-  }
+
+.last-articles__title h2{
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
 }
-@media (max-width:366px) {
-  #home-slidder .caption h1 {
-    font-size: 32px !important;
-  }
+
+.last-articles__thumbs{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 0;
+}
+
+
+.last-articles__thumbs img{
+  display: block;
+  width: 100%;
+  
+}
+
+.our-team-inner{
+  position: relative;
+}
+
+.our-team-inner::before {
+    content: "";
+    border: 4px solid #ffffff;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    width: 93%;
+    height: 75%;
+}
+
+.our-team-text {
+    text-align: center;
+    padding-left: 24px;
+    position: relative;
+    z-index: 9;
+    padding-top: 10px;
+    min-height: 105px;
+}
+
+.our-team-box {
+    float: left;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.our-team-text::before {
+    content: "";
+    text-align: center;
+    background: #000000;
+    width: 324px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.out-team-img img{
+  height: 432px;
+  width: 324px;
+
+  width: 100%;
+}
+
+h5{
+  color: white;
+  font-family: 'Oswald';
+}
+
+span{
+  color: #d19d64;
+  font-family: 'Oswald';
+}
+img{
+  outline: none;
 }
