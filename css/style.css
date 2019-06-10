@@ -61,7 +61,7 @@ body {
 }
 
 .media-body .caption .container{
-  
+
   left: 0;
 }
 
@@ -220,7 +220,7 @@ body {
   padding-top: 100px;
   left: 0;
   top: 0;
-  
+
   overflow: auto;
   background-color: black;
 }
@@ -336,6 +336,7 @@ img.hover-shadow {
   bottom: 15px;
   width: 93%;
   height: 75%;
+
 }
 
 .our-team-text {
@@ -351,6 +352,7 @@ img.hover-shadow {
   float: left;
   padding-left: 28px;
   padding-right: 28px;
+  min-width: 328px;
 }
 
 .our-team-text::before {
@@ -369,7 +371,6 @@ img.hover-shadow {
 
 .our-team-img img{
   height: 432px;
-
 
   width: 100%;
 }
