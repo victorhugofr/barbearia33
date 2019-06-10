@@ -394,7 +394,6 @@ img.hover-shadow {
 .map-inner-ic {
     border: 1px solid #917758;
     border-radius: 100%;
-  
     display: block;
     height: 40px;
     padding-top: 8px;
@@ -407,24 +406,8 @@ img.hover-shadow {
 }
 
 .map-top-text {
-
     overflow: hidden;
-    padding-left: 15px;
     padding: 25px 0 0 0;
-
-}
-
-.fas{
-
-    font-family: 'IcoFont' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 
 }
 
