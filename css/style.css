@@ -339,6 +339,16 @@ img.hover-shadow {
 
 }
 
+
+.copyright-area {
+    position: relative;
+    padding: 60px 0 48px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #919191;
+    background-color: #262526;
+}
+
 .our-team-text {
   text-align: center;
   padding-left: 24px;
